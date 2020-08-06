@@ -19,9 +19,9 @@ func Convert(n int) string {
 		raindrop += "Plong"
 	}
 
-	if raindrop != "" {
-		return raindrop
+	if raindrop == "" {
+		raindrop = strconv.Itoa(n)
 	}
 
-	return strconv.Itoa(n)
+	return raindrop
 }
